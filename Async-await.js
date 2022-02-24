@@ -2,7 +2,7 @@ const urls = [
 
     'https://jsonplaceholder.typicode.com/users',
     'https://jsonplaceholder.typicode.com/posts',
-    'https://jsonplaceholder.typicode.com/albums',
+    'https://jsonplaceholder.typicode.com/albums'
     
 ]
 
@@ -23,7 +23,7 @@ const getData = async function(){
     }catch(err){
 
         console.log('oops',err)
-        
+
     }
 
 }
