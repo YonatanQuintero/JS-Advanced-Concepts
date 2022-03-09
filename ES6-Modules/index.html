@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Es6 modules</title>
+    </head>
+    <body>
+        <h1>Es6 Modules</h1>
+    </body>
+    <script type="module" src="./es6-modules.js"></script>
+    <script type="module">
+        import fight, { jump } from "./es6-modules.js"
+        console.log(fight('ron','hedwig'))
+        console.log(jump())
+    </script>
+</html>
