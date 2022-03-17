@@ -34,3 +34,10 @@ function reverse2(str)
 
     return backwards.join('')
 }
+
+function reverse3(str)
+{
+    return str.split('').reverse().join('')
+}
+
+const reverse4 = str => [...str].reverse().join('')
