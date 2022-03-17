@@ -12,7 +12,6 @@ class MyArray{
     push(item){
         this.data[this.length] = item
         this.length++
-        console.log(item)
         return this.length
     }
 
