@@ -36,32 +36,5 @@ function mergedSortedArrays2(a, b)
     return sorted
 }
 
-//solution 3
-function mergedSortedArrays3(a,b)
-{
-    let x = a[0]
-    let y = b[0]
-    let i = 1
-    let j = 1
-    const mergedSorted = []
-
-    while(x || y)
-    {
-        if(!y || x < y)
-        {
-            mergedSorted.push(x)
-            x = a[i]
-            i++
-        }
-        else
-        {
-            mergedSorted.push(y)
-            y = b[j]
-            j++
-        }
-    }
-
-    return mergedSorted
-}
-
-console.log(mergedSortedArrays3([0, 3, 4, 31], [4, 6, 30]))
+//console.log(mergedSortedArrays3([0, 3, 4, 31], [4, 6, 30]))
+console.log(mergedSortedArrays2([0, 2, 4, 6, 1, 3], [4, 5, 0, 20, 1, 30, 7]))
