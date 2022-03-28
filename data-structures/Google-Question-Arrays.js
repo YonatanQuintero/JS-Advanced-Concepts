@@ -1,3 +1,10 @@
+//Google question
+//Given an array = [2, 5, 1, 2, 3, 5, 1, 2, 4]
+//It should be return 2
+
+//Given an array = [2, 1, 1, 2, 3, 5, 1, 2, 4]
+//It should be return 1
+
 const arr1 = [2, 5, 1, 2, 3, 5, 1, 2, 4]
 const arr2 = [2, 1, 1, 2, 3, 5, 1, 2, 4]
 const arr3 = [2, 3, 4, 5]
