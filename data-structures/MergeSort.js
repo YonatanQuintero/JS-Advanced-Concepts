@@ -45,6 +45,6 @@ function merge(arr, left, right, nl, nr) {
 }
 
 const arr1 = [10, 2, 6, 1, 3, 4, 5, 8, 9, 7, 0]
-    //output = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+//output = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 mergeSort(arr1, arr1.length)
 console.log(arr1)
