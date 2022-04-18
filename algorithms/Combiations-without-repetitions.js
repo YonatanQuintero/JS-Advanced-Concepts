@@ -21,6 +21,6 @@ function helper(input, r, i, n, aux, output, k) {
     return k
 }
 
-const input = ['a', 'b', 'c', 'd']
-const input2 = ['a', 'b', 'c', 'd','e']
-console.log(combinationsWithoutRepetition(input, 3))
+const input = ['0', '2', '1']
+//const input2 = ['a', 'b', 'c', 'd','e']
+console.log(combinationsWithoutRepetition(input, 2))
