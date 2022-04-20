@@ -90,7 +90,20 @@ const printLock = (lock, type) => {
     }
 }
 
-//Find winner
+/*
+Find winner:
+First fill  all of locked array,
+then compute the total of edges that points a every candidate,
+the candidate winner doesn't have edges that points toward it,
+if all candidates has edges, then there is a cycle, 
+so we need to skip the last pair of the pairs array 
+and to repeat this operation until find a winner 
+or until iterate over all of the pairs.
+@data = pairs of candidates
+@length = total candidates
+@n = size of data to work
+@winner = winner candidate, by default is -1
+**/
 const findWinner = (data, length, n, winner) => {
 
     if (n === 0 || winner >= 0) {
@@ -111,7 +124,7 @@ const findWinner = (data, length, n, winner) => {
         lock[data[i][0]][data[i][1]] = true
     }
 
-    //Calculate edges
+    //Compute edges
     const edges = []
     for (let i = 0; i < length; i++) {
         edges[i] = 0
