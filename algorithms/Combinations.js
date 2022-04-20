@@ -21,7 +21,7 @@ function helper(input, r, n, aux, output, k) {
 
 
 const arr = [0, 1, 2]
-const r = 3
+const r = 2
 
 const output = combinations(arr, r)
 console.log(output)
